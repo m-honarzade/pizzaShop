@@ -17,7 +17,7 @@ const Menu = (props) => {
           <div className="max-w-4xl flex ">
             <ul className="grid grid-cols-2 gap-y-16 ">
               {props.pizzaData.map((item) => (
-                <Pizza key={props.pizzaData.name} pizzaData={item} />
+                <Pizza key={item.name} pizzaData={item} />
               ))}
             </ul>
           </div>
